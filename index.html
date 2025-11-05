@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dingus.media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 dingus.media</h1>
+        <p class="subtitle">Your personal media hub</p>
+        
+        <div class="services">
+            <a href="https://dingus.media/play" class="service-card">
+                <span class="emoji">📺</span>
+                <h2>Jellyfin</h2>
+                <p>Stream movies, TV shows, and music</p>
+            </a>
+            
+            <a href="https://dingus.media/request" class="service-card">
+                <span class="emoji">🎯</span>
+                <h2>Request Media</h2>
+                <p>Request new content to be added</p>
+            </a>
+        </div>
+        
+        <div class="access-section">
+            <h3>🎟️ Request Access</h3>
+            <form id="accessForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Why do you want access? (optional)"></textarea>
+                <button type="submit">Send Request</button>
+                <div id="message-status"></div>
+            </form>
+            <div class="divider">— OR —</div>
+            <a href="https://dingus.media/invite" class="button-secondary">
+                Already Have an Invite? Manage Account
+            </a>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
